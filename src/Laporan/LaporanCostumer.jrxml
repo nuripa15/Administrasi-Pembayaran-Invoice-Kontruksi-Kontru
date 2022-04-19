@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7b1030d2-61fd-4e63-bbd6-aa957ee06d95">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="316"/>
+	<property name="ireport.y" value="100"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     data_costumer.`ID` AS data_costumer_ID,
+     data_costumer.`Nama` AS data_costumer_Nama,
+     data_costumer.`Perusahaan` AS data_costumer_Perusahaan,
+     data_costumer.`Alamat` AS data_costumer_Alamat,
+     data_costumer.`NoTelp` AS data_costumer_NoTelp,
+     data_costumer.`Email` AS data_costumer_Email
+FROM
+     `data_costumer` data_costumer]]>
+	</queryString>
+	<field name="data_costumer_ID" class="java.lang.Integer"/>
+	<field name="data_costumer_Nama" class="java.lang.String"/>
+	<field name="data_costumer_Perusahaan" class="java.lang.String"/>
+	<field name="data_costumer_Alamat" class="java.lang.String"/>
+	<field name="data_costumer_NoTelp" class="java.lang.String"/>
+	<field name="data_costumer_Email" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="105" splitType="Stretch">
+			<image>
+				<reportElement x="221" y="11" width="84" height="60" uuid="19ab863c-550c-4a11-a8e4-7edb4e9c3416"/>
+				<imageExpression><![CDATA["C:\\Users\\IronMan\\Desktop\\Adminstrasi Pembayaran Invoice Jasa Konstruksi\\src\\gambar\\logo_rajawali-removebg-preview.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="315" y="0" width="262" height="35" uuid="35dd100f-7456-4fdd-855a-1b4f54b575dd"/>
+				<textElement>
+					<font fontName="Candara" size="24"/>
+				</textElement>
+				<text><![CDATA[Laporan Data Costumer]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="330" y="35" width="210" height="36" uuid="17b7429c-df68-4e0c-9192-4f2d2e6f3b21"/>
+				<textElement>
+					<font fontName="Candara" size="20"/>
+				</textElement>
+				<text><![CDATA[PT. Rajawali Sakti Utama]]></text>
+			</staticText>
+			<line>
+				<reportElement x="148" y="97" width="571" height="1" uuid="4c849d8f-6c32-4215-aacd-e4cf3b9c24e7"/>
+			</line>
+			<staticText>
+				<reportElement x="231" y="75" width="452" height="22" uuid="007c42f4-7683-4edb-be4e-5da9e75d4728"/>
+				<text><![CDATA[ Kw. Niaga Citra Gran, Blok R11, Jl. Alternatif Cibubur No.17-18, RT.002/RW.008, Jatisampurna]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="16" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<rectangle>
+				<reportElement x="48" y="41" width="100" height="20" backcolor="#006699" uuid="ee05c757-577c-4598-b575-e0d861e2116c"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="148" y="41" width="120" height="20" backcolor="#006699" uuid="456395e1-8eaa-4bec-a21b-e5e637219660"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="268" y="41" width="145" height="20" backcolor="#006699" uuid="f482eb13-57da-445b-b257-8891c2f69ef5"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="413" y="41" width="154" height="20" backcolor="#006699" uuid="6d4b236a-bd22-438d-aa72-c8db7faa2cec"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="567" y="41" width="86" height="20" backcolor="#006699" uuid="a7e48d9c-fd99-44c3-aa45-df6c0aef4d55"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="653" y="41" width="129" height="20" backcolor="#006699" uuid="3209f0c7-3f83-4105-b94a-a52dafd134f8"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="71" y="41" width="77" height="20" uuid="22073d0e-c731-405c-89bc-889d8b65bd17"/>
+				<text><![CDATA[ID Costumer]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="168" y="41" width="100" height="20" uuid="aa8445e5-5e2b-4b9b-8a64-5e3725df3e94"/>
+				<text><![CDATA[Nama Costumer]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="305" y="41" width="89" height="20" uuid="eff40664-2542-4de1-a44c-511c79f9097b"/>
+				<text><![CDATA[Perusahaan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="467" y="41" width="86" height="20" uuid="14537450-bbf2-414f-8ce2-9ed412ff5885"/>
+				<text><![CDATA[Alamat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="583" y="41" width="70" height="20" uuid="1a2cf690-cbf4-48ae-b640-5b84bddf6a50"/>
+				<text><![CDATA[No Telpon]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="700" y="41" width="49" height="20" uuid="eb4a0272-dfc9-44d8-b432-7a291ea95b64"/>
+				<text><![CDATA[Email]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="61" y="0" width="87" height="20" uuid="c050eaa4-0d13-4b83-a1dc-d3b4f937733e"/>
+				<textFieldExpression><![CDATA[$F{data_costumer_ID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="161" y="0" width="107" height="20" uuid="0ea23efd-6574-4240-9576-d3f117c4ca30"/>
+				<textFieldExpression><![CDATA[$F{data_costumer_Nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="0" width="114" height="20" uuid="9c28fd50-5f84-426c-a8b5-ed14d1b36333"/>
+				<textFieldExpression><![CDATA[$F{data_costumer_Perusahaan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="425" y="0" width="142" height="20" uuid="e94c0010-2a81-4894-8b46-8c82d9ef13b0"/>
+				<textFieldExpression><![CDATA[$F{data_costumer_Alamat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="577" y="0" width="76" height="20" uuid="bf12d0ba-a3f1-45e2-81f2-32032086c5f1"/>
+				<textFieldExpression><![CDATA[$F{data_costumer_NoTelp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="658" y="0" width="124" height="20" uuid="28f47e32-c16b-44c0-b978-afe9fab08f57"/>
+				<textFieldExpression><![CDATA[$F{data_costumer_Email}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement mode="Transparent" x="48" y="0" width="100" height="20" uuid="8264c3a1-821b-4e3e-b5d9-29e3bf21b80a"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="148" y="0" width="120" height="20" uuid="5337e893-59d3-4336-8408-1a82f43e0f0d"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="268" y="0" width="145" height="20" uuid="5789dc27-3eb0-423a-8f0c-53d74e3eeb67"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="413" y="0" width="154" height="20" uuid="7f282e8b-75cd-4c47-8ec3-5a2000720ffb"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="567" y="0" width="86" height="20" uuid="6215d30a-f22e-4911-a79c-a88f17c45f93"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="653" y="0" width="129" height="20" uuid="4b65490e-5e27-4841-9a0e-f8d19b29e526"/>
+			</rectangle>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="17" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="87" splitType="Stretch">
+			<staticText>
+				<reportElement x="581" y="2" width="43" height="20" uuid="3f4497ef-5e21-4578-a44b-3969b0f97c42"/>
+				<text><![CDATA[Jakarta, ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="600" y="22" width="100" height="20" uuid="4eac59ad-76f0-4f8b-b26e-6c75992809f4"/>
+				<text><![CDATA[Presiden Direktur]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="624" y="67" width="59" height="20" uuid="f4ff0468-0258-4a25-89d6-dfd6d30bdcf7"/>
+				<text><![CDATA[Dewantoro]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="624" y="2" width="100" height="20" uuid="d8e1df33-c8e8-4e5b-8f18-5080957f1452"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
